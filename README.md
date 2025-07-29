@@ -18,7 +18,7 @@ Both notebooks fine‑tune a DenseNet121 model. DenseNet is a deep learning arch
 
 ## Notebook Overview
 
-### `ChexNetFinal (2).ipynb`
+### `ChexNetFinal.ipynb`
 This notebook demonstrates a complete training pipeline for the pediatric Chest X‑Ray Images dataset.
 
 - **Data loading and preprocessing** – The `image_dataset_from_directory` API reads images from the `train/`, `val/` and `test/` folders and resizes them to 224×224 pixels. Images are normalized by scaling pixel intensities to the [0, 1] range.
@@ -27,7 +27,7 @@ This notebook demonstrates a complete training pipeline for the pediatric Chest 
 - **Evaluation** – Includes confusion matrix, classification report, and AUC.
 - **Single‑image prediction and Grad‑CAM** – The model makes predictions and visualizes key regions with Grad‑CAM.
 
-### `NIHbinaryclassification (1).ipynb`
+### `NIHbinaryclassification.ipynb`
 This notebook targets binary classification on the NIH ChestX‑ray14 dataset.
 
 - **Data preparation** – Uses a CSV with paths and labels. Normal cases are downsampled to balance the dataset. Stratified train/validation splits preserve class distribution.
