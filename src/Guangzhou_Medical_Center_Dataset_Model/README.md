@@ -58,7 +58,7 @@ The notebook uses the Chest X‑Ray Images (Pneumonia) dataset, which contains 5
     ```
 
 3. **Launch Jupyter Notebook:**
-    Open `ChexNetFinal (2).ipynb` and run the cells sequentially. GPU is recommended for faster training.
+    Open `ChexNetFinal.ipynb` and run the cells sequentially. GPU is recommended for faster training.
 
 4. **Evaluate the Model:**
     After training, check the confusion matrix, classification report, and ROC curve to assess performance. Use Grad‑CAM to inspect attention regions in the lungs.
