@@ -90,7 +90,7 @@ tf.keras.models.load_model("saved_models/nih_binary_model_finetuned.keras")
    - Optionally extract only NORMAL and PNEUMONIA images for speed
 
 3. **Run the Notebook:**
-   - Open `NIHbinaryclassification (1).ipynb` in Jupyter
+   - Open `NIHbinaryclassification.ipynb` in Jupyter
    - Run cells sequentially (GPU highly recommended)
 
 4. **Inspect Outputs:**
