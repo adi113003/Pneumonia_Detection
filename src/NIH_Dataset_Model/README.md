@@ -90,7 +90,7 @@ tf.keras.models.load_model("saved_models/nih_binary_model_finetuned.keras")
    - Optionally extract only NORMAL and PNEUMONIA images for speed
 
 3. **Run the Notebook:**
-   - Open `NIHbinaryclassification.ipynb` in Jupyter
+   - Open `NIHbinaryclassification (1).ipynb` in Jupyter
    - Run cells sequentially (GPU highly recommended)
 
 4. **Inspect Outputs:**
@@ -109,3 +109,20 @@ tf.keras.models.load_model("saved_models/nih_binary_model_finetuned.keras")
 ## Disclaimer
 
 This notebook is intended for research and educational use only. It should not be used for clinical decision-making. Always consult licensed medical professionals when interpreting radiographic images.
+
+## Provided Model Files
+
+Two pre-trained models are available for direct use without retraining:
+
+- `chest_xray_densenet_model (1).keras` — Fine-tuned DenseNet121 model trained on the pediatric Chest X-Ray Images (Pneumonia) dataset.
+- `nih_binary_model_finetuned.keras` — Fine-tuned DenseNet121 model trained on the NIH ChestX-ray14 dataset for binary classification (PNEUMONIA vs NORMAL).
+
+You can load either model using:
+
+```python
+from tensorflow.keras.models import load_model
+
+model = load_model("path_to_model_file.keras")
+```
+
+Ensure TensorFlow 2.x is installed and the model file is in your working directory.
